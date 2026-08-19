@@ -87,6 +87,8 @@ public int hashCode() {
 
 ## 回帰保証
 
+### 再発防止テスト
+
 修正後は、最初に失敗した`identicalWebhookPayload_isAcceptedOnlyOnceAndRecordedOnce`をそのまま残しています。このテストは二度目のHTTP応答が`409`であることと、処理済み件数が`1`であることを別々に検証します。さらに、次の二つのテストを維持します。
 
 | テスト | 回帰として守る契約 |
