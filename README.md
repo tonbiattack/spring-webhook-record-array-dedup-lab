@@ -36,7 +36,7 @@ mvn --batch-mode clean test
 
 検証済みの`main`では、4テストがすべて成功します。`MockMvc`は実サーバーを起動せずにSpring MVCのリクエスト処理を通せるため、この教材ではHTTP応答を実境界として確認します。[4]
 
-## バグを自分で再現する
+## バグを再現する
 
 ```bash
 git checkout 7135d89
