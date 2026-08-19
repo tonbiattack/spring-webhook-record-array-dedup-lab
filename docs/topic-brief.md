@@ -33,7 +33,7 @@
 | 最終観測 | 二度のPOST後に`WebhookDeliveryService.processedCount()`を読み、処理済み件数が`1`であることを独立に検証する。さらに、同じ`eventType`で異なるバイト列は別件として受理されることを確認する。 |
 | 決定性 | 時刻、乱数、並行実行、`sleep`を使用しない。固定JSONとインメモリ集合だけを使う。 |
 | 固定状態の検証コマンド | `mvn --batch-mode clean test` |
-| バグ状態の確認コマンド | `git checkout <bug-commit>`後に`mvn --batch-mode test -Dtest=WebhookDeliveryControllerTest` |
+| バグ状態の確認コマンド | `git checkout 7135d89`後に`mvn --batch-mode test -Dtest=WebhookDeliveryControllerTest` |
 
 ## 仮説
 
