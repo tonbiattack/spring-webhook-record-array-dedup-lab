@@ -1,0 +1,81 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---< jp.tonbiattack.debuglab:spring-webhook-record-array-dedup-lab >----
+[INFO] Building spring-webhook-record-array-dedup-lab 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.4.1/maven-clean-plugin-3.4.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.4.1/maven-clean-plugin-3.4.1.pom (5.6 kB at 17 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/43/maven-plugins-43.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/43/maven-plugins-43.pom (7.5 kB at 133 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/43/maven-parent-43.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/43/maven-parent-43.pom (50 kB at 751 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.4.1/maven-clean-plugin-3.4.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.4.1/maven-clean-plugin-3.4.1.jar (36 kB at 699 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:3.4.1:clean (default-clean) @ spring-webhook-record-array-dedup-lab ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.pom (7.8 kB at 151 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.1/plexus-utils-4.0.1.jar (193 kB at 3.4 MB/s)
+[INFO] Deleting /home/ubuntu/spring-webhook-record-array-dedup-lab/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ spring-webhook-record-array-dedup-lab ---
+[INFO] skip non existing resourceDirectory /home/ubuntu/spring-webhook-record-array-dedup-lab/src/main/resources
+[INFO] skip non existing resourceDirectory /home/ubuntu/spring-webhook-record-array-dedup-lab/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ spring-webhook-record-array-dedup-lab ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ spring-webhook-record-array-dedup-lab ---
+[INFO] skip non existing resourceDirectory /home/ubuntu/spring-webhook-record-array-dedup-lab/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ spring-webhook-record-array-dedup-lab ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug parameters release 21] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.3:test (default-test) @ spring-webhook-record-array-dedup-lab ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running jp.tonbiattack.debuglab.webhook.WebhookDeliveryControllerTest
+04:28:38.170 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jp.tonbiattack.debuglab.webhook.WebhookDeliveryControllerTest]: WebhookDeliveryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+04:28:38.284 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jp.tonbiattack.debuglab.webhook.WebhookDedupLabApplication for test class jp.tonbiattack.debuglab.webhook.WebhookDeliveryControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2026-08-19T04:28:38.648Z  INFO 2815 --- [           main] j.t.d.w.WebhookDeliveryControllerTest    : Starting WebhookDeliveryControllerTest using Java 21.0.11 with PID 2815 (started by ubuntu in /home/ubuntu/spring-webhook-record-array-dedup-lab)
+2026-08-19T04:28:38.650Z  INFO 2815 --- [           main] j.t.d.w.WebhookDeliveryControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-08-19T04:28:39.466Z  INFO 2815 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-08-19T04:28:39.466Z  INFO 2815 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-08-19T04:28:39.468Z  INFO 2815 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-08-19T04:28:39.489Z  INFO 2815 --- [           main] j.t.d.w.WebhookDeliveryControllerTest    : Started WebhookDeliveryControllerTest in 1.081 seconds (process running for 1.901)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.285 s -- in jp.tonbiattack.debuglab.webhook.WebhookDeliveryControllerTest
+[INFO] Running jp.tonbiattack.debuglab.webhook.WebhookDeliveryEqualityObservationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 s -- in jp.tonbiattack.debuglab.webhook.WebhookDeliveryEqualityObservationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.395 s
+[INFO] Finished at: 2026-08-19T04:28:40Z
+[INFO] ------------------------------------------------------------------------

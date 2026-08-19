@@ -12,18 +12,20 @@ import org.junit.jupiter.api.Test;
 class WebhookDeliveryEqualityObservationTest {
 
     @Test
-    void equalByteContentsButDifferentArrayReferences_areNotEqualAsBuggyRecordComponents() {
+    void equalByteContentsButDifferentArrayReferences_areEqualAsWebhookDeliveries() {
         byte[] firstPayload = {1, 2, 3};
         byte[] secondPayload = {1, 2, 3};
         WebhookDelivery first = new WebhookDelivery("invoice.paid", firstPayload);
         WebhookDelivery second = new WebhookDelivery("invoice.paid", secondPayload);
-        Set<WebhookDelivery> deliveries = new HashSet<>(Set.of(first, second));
+        Set<WebhookDelivery> deliveries = new HashSet<>();
+        deliveries.add(first);
+        deliveries.add(second);
 
         assertAll(
                 () -> assertThat(firstPayload).isNotSameAs(secondPayload),
                 () -> assertThat(Arrays.equals(firstPayload, secondPayload)).isTrue(),
-                () -> assertThat(first).isNotEqualTo(second),
-                () -> assertThat(deliveries).hasSize(2)
+                () -> assertThat(first).isEqualTo(second),
+                () -> assertThat(deliveries).hasSize(1)
         );
     }
 
